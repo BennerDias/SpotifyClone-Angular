@@ -2,6 +2,9 @@
 
 This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.6.
 
+Creating a clone of Spotify for study, I'll make the Front-end with Angular and the Back-End in nodeJS, I'll use the MongooDB for up my Api.
+
+
 ## Development server
 
 To start a local development server, run:
