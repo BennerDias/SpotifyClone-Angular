@@ -1,1 +1,11 @@
 /* You can add global styles to this file, and also import other style files */
+*{
+  border: 0;
+  margin: 0;
+  padding: 0;
+  color: white;
+  font-family: Rubik, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+  background-color: #000;
+}

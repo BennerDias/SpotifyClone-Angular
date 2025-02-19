@@ -1,0 +1,22 @@
+<div id="menuContainer">
+  <a href="">
+    <h2>{{ title }}</h2>
+  </a>
+  <a href="">
+    <p>Mostrar tudo</p>
+  </a>
+</div>
+<div class="card-container">
+  <div class="card" *ngFor="let item of data">
+    <a href="">
+      <img [src]="item.image"   alt="">
+    </a>
+    <div id="subtitle">
+      <a href="">
+        <p>{{ item.name }}</p>
+      </a>
+      <p *ngIf="title === 'Artistas Populares'" >Artista</p>
+      <p *ngIf="title === 'Músicas Populares'" > {{ item.artist }} </p>
+    </div>
+  </div>
+</div>
