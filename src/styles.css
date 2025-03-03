@@ -5,6 +5,7 @@
   padding: 0;
   color: white;
   font-family: Rubik, 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  user-select: none;
 }
 body{
   background-color: #000;

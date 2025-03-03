@@ -1,6 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { artistArray } from '../database/artists';
-import { songsArray } from '../database/songs';
+
 
 
 @Component({

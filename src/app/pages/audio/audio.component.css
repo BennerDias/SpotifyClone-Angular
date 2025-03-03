@@ -1,0 +1,84 @@
+
+#audioDevice img{
+    width: 100%;
+    height: 450px;
+}
+/* Container principal do player */
+#audioDevice {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    height: 80vh;
+    background-color: #181818; /* Cor de fundo escura */
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+    text-align: center;
+  }
+  
+  /* Capa da música */
+  #audioDevice img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 15px;
+    object-fit: cover;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+  }
+  
+  /* Título e Artista */
+  #audioDevice #title {
+    color: #fff;
+    margin-bottom: 15px;
+  }
+  
+  #audioDevice h2 {
+    font-size: 1.5rem;
+    margin: 0;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  #audioDevice p {
+    font-size: 1rem;
+    color: #b3b3b3;
+    margin: 0;
+  }
+  
+  /* Estilização do player de áudio */
+  #audioDevice audio {
+    width: 100%;
+    margin-top: 10px;
+    background-color: #333; /* Cor de fundo para o player */
+    border-radius: 50px;
+    border: none;
+    outline: none;
+  }
+  
+  /* Estilizando os controles do áudio */
+  #audioDevice audio::-webkit-media-controls-panel {
+    background-color: #1db954; /* Painel escuro do player */
+  }
+  
+  #audioDevice audio::-webkit-media-controls-play-button {
+    background-color: #1db954; /* Cor do botão play/pause, estilo Spotify */
+    border-radius: 50%;
+    box-shadow: 0 0 8px rgba(0, 0, 0, 0.6);
+  }
+  
+  #audioDevice audio::-webkit-media-controls-volume-slider {
+    background-color: #1db954;
+  }
+  
+  #audioDevice audio::-webkit-media-controls-mute-button {
+    background-color: transparent;
+  }
+  
+  /* Adicionando um efeito de hover no botão play/pause */
+  #audioDevice audio::-webkit-media-controls-play-button:hover {
+    background-color: #1ed760; /* Cor de hover para o botão */
+  }
+  
+  

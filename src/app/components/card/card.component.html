@@ -1,22 +1,31 @@
 <div id="menuContainer">
-  <a href="">
+  <a routerLink="/">
     <h2>{{ title }}</h2>
   </a>
-  <a href="">
+  <a routerLink="/">
     <p>Mostrar tudo</p>
   </a>
 </div>
+
 <div class="card-container">
   <div class="card" *ngFor="let item of data">
-    <a href="">
-      <img [src]="item.image"   alt="">
+    <!-- Verifique se é uma música ou artista antes de exibir -->
+    <a *ngIf="title === 'Músicas Populares'" [routerLink]="['/audio', item.id]">
+      <img [src]="item.image" alt="">
     </a>
+    <a *ngIf="title === 'Artistas Populares'" [routerLink]="'artists'">
+      <img [src]="item.image" alt="">
+    </a>
+
     <div id="subtitle">
-      <a href="">
+      <a *ngIf="title === 'Músicas Populares'" [routerLink]="['/audio', item.id]">
         <p>{{ item.name }}</p>
       </a>
-      <p *ngIf="title === 'Artistas Populares'" >Artista</p>
-      <p *ngIf="title === 'Músicas Populares'" > {{ item.artist }} </p>
+      <a *ngIf="title === 'Artistas Populares'" [routerLink]="'artists'">
+        <p>{{ item.name }}</p>
+      </a>
+      <p *ngIf="title === 'Artistas Populares'">Artista</p>
+      <p *ngIf="title === 'Músicas Populares'">{{ item.artist }}</p>
     </div>
   </div>
 </div>
