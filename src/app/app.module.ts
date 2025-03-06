@@ -8,6 +8,7 @@ import { MenuComponent } from './components/menu/menu.component';
 import { BoxContentComponent } from './components/box-content/box-content.component';
 import { CardComponent } from './components/card/card.component';
 import { AudioComponent } from './pages/audio/audio.component';
+import { ArtistComponent } from './pages/artist/artist.component';
 
 @NgModule({
   declarations: [
@@ -17,6 +18,7 @@ import { AudioComponent } from './pages/audio/audio.component';
     BoxContentComponent,
     CardComponent,
     AudioComponent,
+    ArtistComponent,
   ],
   imports: [
     BrowserModule,

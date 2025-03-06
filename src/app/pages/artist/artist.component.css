@@ -1,0 +1,34 @@
+#ArtistBox {
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+    height: 600px;    
+    justify-content: center;    
+    margin: 0 auto;
+}
+
+#Banner {
+    display: flex;
+    flex-direction: column;
+    background-image: url('https://www.fmodia.com.br/wp-content/uploads/2024/05/Kamisa-10-holofote-fmodia.jpg');
+    background-size: contain; /* Ajusta a imagem para cobrir todo o elemento */
+    background-position: center; /* Centraliza a imagem */
+    background-attachment: fixed; /* Faz o efeito de fixação */
+    width: 100%;
+    height: 350px;
+    justify-content: flex-end;
+    padding-left: 10px;
+    padding-bottom: 10px;
+}
+#Banner h2 {
+    font-size: 7em;
+}
+
+#play{
+    display: flex;
+    flex-direction: row;
+}
+#playBtn{
+    font-size: 2em;
+    border: 20px outset #1ed760; 
+}
